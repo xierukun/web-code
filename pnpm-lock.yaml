@@ -14,6 +14,9 @@ dependencies:
   vue:
     specifier: ^3.3.4
     version: 3.3.4
+  vue-router:
+    specifier: ^4.2.4
+    version: 4.2.4(vue@3.3.4)
 
 devDependencies:
   '@vitejs/plugin-vue':
@@ -391,6 +394,10 @@ packages:
       '@vue/compiler-dom': 3.3.4
       '@vue/shared': 3.3.4
 
+  /@vue/devtools-api@6.5.0:
+    resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
+    dev: false
+
   /@vue/reactivity-transform@3.3.4:
     resolution: {integrity: sha512-MXgwjako4nu5WFLAjpBnCj/ieqcjE2aJBINUNQzkZQfzIZA4xn+0fV1tIYBJvvva3N3OvKGofRLvQIwEQPpaXw==}
     dependencies:
@@ -666,7 +673,7 @@ packages:
     dev: false
 
   /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -1055,6 +1062,15 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      vue: 3.3.4
+    dev: false
+
+  /vue-router@4.2.4(vue@3.3.4):
+    resolution: {integrity: sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.5.0
       vue: 3.3.4
     dev: false
 
